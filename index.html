@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twainman Ministry Intl'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-80 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="text-white text-xl font-bold">LOGO</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-yellow-400 transition">Home</a>
+                    <a href="about.html" class="text-white hover:text-yellow-400 transition">About Us</a>
+                    <a href="sermons.html" class="text-white hover:text-yellow-400 transition">Sermon</a>
+                    <a href="services.html" class="text-white hover:text-yellow-400 transition">Service Time</a>
+                    <a href="events.html" class="text-white hover:text-yellow-400 transition">Events</a>
+                    <a href="giving.html" class="text-white hover:text-yellow-400 transition">Giving</a>
+                </div>
+                
+                <!-- Social Icons & Donate Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-white hover:text-yellow-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-yellow-400 transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="giving.html"><button class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-500 transition">
+                        DONATE
+                    </button></a>
+                    
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="index.html" class="block text-white hover:text-yellow-400 py-2">Home</a>
+                <a href="about.html" class="block text-white hover:text-yellow-400 py-2">About Us</a>
+                <a href="sermons.html" class="block text-white hover:text-yellow-400 py-2">Sermon</a>
+                <a href="events.html" class="block text-white hover:text-yellow-400 py-2">Events</a>
+                <a href="giving.html" class="block text-white hover:text-yellow-400 py-2">Giving</a>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="giving.html"><button class="w-full bg-yellow-400 text-black px-6 py-2 rounded font-semibold mt-4">
+                        DONATE
+                    </button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="./images/church_hero.jpg" 
+                 alt="Worship" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+              WELCOME TO TWAINMAN <span class="text-yellow-400">MINISTRY INTL'</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Experience Gods Love in a community where everyone belongs, grows, and serves together.
+                Proclaiming the Lordship of Jesus Christ
+            </p>
+            <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded hover:bg-white hover:text-black transition font-semibold">
+                Worship With Us
+            </button>
+        </div>
+    </section>
+
+    <!-- Our Mandate Section (Book Design) -->
+    <section class="book-section py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="book-page book-shadow px-6 sm:px-12 py-12 sm:py-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-800">
+                    OUR MANDATE
+                </h2>
+                
+                <div class="text-gray-700 leading-relaxed space-y-6">
+                    <p class="text-base sm:text-lg">
+                        At TMI we have a mandate to serve this generation and generations to come with the 
+                        power, glory and the fullness of God. To proclaim the good news; to reconcile and 
+                        restore every creature to God according to His perfect will, predestination and good 
+                        pleasure in Christ Jesus unto a perfect man.
+                    </p>
+                    
+                    <p class="text-sm sm:text-base italic text-gray-600 border-l-4 border-yellow-400 pl-4">
+                        "Having abolished in his flesh the the enmity, even the law of commandments contained in 
+                        ordinances; for to make himself of twain one new man, so making peace" - Ephesians 2:15
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life at Twainman Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Title -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">
+                LIFE AT TWAINMAN
+            </h2>
+
+            <!-- Carousel -->
+            <div class="relative mb-20">
+                <div class="carousel-container overflow-hidden rounded-lg shadow-xl">
+                    <div class="carousel-slides flex transition-transform duration-500 ease-in-out">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="/images/gallery-12.jpg" 
+                                 alt="Sunday Worship" 
+                                 class="w-full h-96 object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-4">
+                                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">Sunday worship experience</h3>
+                                <p class="text-white mb-4">Join our Vibrant services every Sunday for a life service at 8:00AM</p>
+                                <button class="bg-white text-black px-6 py-2 rounded font-semibold hover:bg-gray-200 transition">
+                                    Join us this sunday
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="/images/gallery-10.jpg" 
+                                 alt="Midweek Service" 
+                                 class="w-full h-96 object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-4">
+                                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">Midweek Bible Study</h3>
+                                <p class="text-white mb-4">Grow deeper in the Word every Tuesday at 6:00PM</p>
+                                <button class="bg-white text-black px-6 py-2 rounded font-semibold hover:bg-gray-200 transition">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="/images/gallery-11.jpg" 
+                                 alt="Prayer Meeting" 
+                                 class="w-full h-96 object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center px-4">
+                                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">Prayer & Intercession</h3>
+                                <p class="text-white mb-4">Join us for powerful prayer sessions every Monday at 6:00PM</p>
+                                <button class="bg-white text-black px-6 py-2 rounded font-semibold hover:bg-gray-200 transition">
+                                    Join Prayer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <button id="prev-slide" class="carousel-btn absolute left-4 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-slide" class="carousel-btn absolute right-4 top-1/2 transform -translate-y-1/2 bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="flex justify-center mt-6 space-x-2">
+                    <button class="indicator active w-3 h-3 rounded-full bg-purple-600" data-slide="0"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
+                </div>
+            </div>
+
+            <h1>The values we live by
+.....proclaiming the Lordship of Jesus Christ discipling the nations</h1>
+
+            <!-- Timeline Section -->
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">A PEOPLE FOR GOD</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                We are a non denominational prayer and discipleship ministry. We are a prophetic army with an Apostolic mandate to proclaim and manifest the Lordship of Jesus as the Christ with full expressions of the kingdom of God amongst us and to make disciples of nations in every place. Our passion for God is deep Our vision is clear Our goal is Christ, to be like him in all things. Our experience with God is real and personal. We grow in Christ in all things We live as a family We work as a team We are the circumcision who worship God in the spirit and have no confidence in the flesh We believe in the manifestations of the sons of God to salvage the creation from the bondage of corruption. preparing the bride-The Church for Christ and enthroning Jesus Christ passion to see whole cities and nations turn to Christ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">THE CALL</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Romans 10:13-15 For whosoever shall call upon the name of the Lord shall be saved. How then shall they call on him in whom they have not believed? and how shall they believe in him of whom they have not heard? and how shall they hear without a preacher? And how shall they preach, except they be sent? as it is written, How beautiful are the feet of them that preach the gospel of peace, and bring glad tidings of good things! At TMI, we desire that everyone discover their ministry and fulfill it. We raise, equip and prepare everyone through discipleship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800">THE ASSIGNMENT</h3>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                Acts 26:18, To open their eyes, and to turn them from darkness to light, and from the power of Satan unto God, that they may receive forgiveness of sins, and inheritance among them which are sanctified by faith that is in Christ. We have a lifetime assignment to turn sinners and whole cities to Christ. We are committed to bringing believers into spiritual maturity, sonship inheiritance and conformity to the image of Jesus Christ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section with Scroll Effect -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="gallery-image-wrapper">
+                    <div class="gallery-image">
+                        <img src="/images/gallery-1.jpg" 
+                             alt="Ministry 1" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                <div class="gallery-image-wrapper">
+                    <div class="gallery-image">
+                        <img src="/images/gallery-2.jpg" 
+                             alt="Ministry 2" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                <div class="gallery-image-wrapper">
+                    <div class="gallery-image">
+                        <img src="/images/gallery-3.jpg" 
+                             alt="Ministry 3" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                <div class="gallery-image-wrapper">
+                    <div class="gallery-image">
+                        <img src="/images/gallery-5.jpg" 
+                             alt="Ministry 4" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermon Section with Curved Background and Skewed Images -->
+    <section class="sermon-section relative overflow-hidden py-20 px-4">
+        <!-- Decorative curve shape -->
+        <div class="curve-shape"></div>
+        
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="relative z-10">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
+                        LISTEN TO OUR LIFE CHANGING SERMONS
+                    </h2>
+                    <p class="text-gray-700 mb-8 leading-relaxed">
+                        Faith comes by hearing and hearing God's word (Romans 10:17). Tune in to life transforming sermons that would bring you healing, comfort and illuminate your spirit through Faith.
+                    </p>
+                    <button class="bg-white text-gray-800 border-2 border-gray-800 px-8 py-3 rounded font-semibold hover:bg-gray-800 hover:text-white transition">
+                        Listen here
+                    </button>
+                </div>
+
+                <!-- Right Skewed Images -->
+                <div class="relative h-96 lg:h-auto">
+                    <div class="skewed-image skewed-image-1">
+                        <img src="/images/gallery-6.jpg" 
+                             alt="Sermon" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="skewed-image skewed-image-2">
+                        <img src="/images/gallery-7.jpg" 
+                             alt="Worship" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Schedules & Upcoming Events Section -->
+    <section class="py-20 px-4 bg-gradient-to-br from-purple-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Weekly Schedules -->
+            <div class="mb-20">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">
+                    Weekly schedules
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/gallery-8.jpg" 
+                                 alt="Sunday Service" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="far fa-calendar"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Every Sunday</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">SUNDAY SERVICE</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <i class="far fa-clock mr-2"></i>
+                                7:30 AM - 11:30 AM
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/gallery-9.jpg" 
+                                 alt="Bible Study" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="fas fa-book-open"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Every Tuesday</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">BIBLE STUDY</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <i class="far fa-clock mr-2"></i>
+                                6:00 PM - 7:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/gallery-13.jpg" 
+                                 alt="Bible Study" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="fas fa-pray"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Every Monday</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Prayers</h3>
+                            <p class="text-gray-600 flex items-center">
+                                <i class="far fa-clock mr-2"></i>
+                                6:00 PM - 7:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">
+                    Upcoming events
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- Event Card 1 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/events1.jpg" 
+                                 alt="Sunday Service" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                            <div class="event-date-badge">
+                                <span class="text-2xl font-bold">15</span>
+                                <span class="text-xs">APR</span>
+                            </div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="far fa-calendar"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Event</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">& Days Prayer & Fasting</h3>
+                            <p class="text-gray-600 flex items-center mb-3">
+                                <i class="far fa-clock mr-2"></i>
+                                April 2025 - June 2025
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/events2.jpg" 
+                                 alt="Bible Study" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                            <div class="event-date-badge">
+                                <span class="text-2xl font-bold">20</span>
+                                <span class="text-xs">APR</span>
+                            </div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="fas fa-book-open"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Event</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Family Intervention</h3>
+                            <p class="text-gray-600 flex items-center mb-3">
+                                <i class="far fa-clock mr-2"></i>
+                                April 2025 - June 2025
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="glass-card group">
+                        <div class="glass-card-image">
+                            <img src="/images/events3.jpg" 
+                                 alt="Bible Study" 
+                                 class="w-full h-full object-cover">
+                            <div class="glass-overlay"></div>
+                            <div class="event-date-badge">
+                                <span class="text-2xl font-bold">25</span>
+                                <span class="text-xs">APR</span>
+                            </div>
+                        </div>
+                        <div class="glass-card-content">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="glass-badge">
+                                    <i class="fas fa-pray"></i>
+                                </span>
+                                <span class="text-sm text-purple-600 font-semibold">Event</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">ETS</h3>
+                            <p class="text-gray-600 flex items-center mb-3">
+                                <i class="far fa-clock mr-2"></i>
+                                April 2025 - June 2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Events Button -->
+                <div class="text-center">
+                    <button class="glass-button">
+                        <span>View all events</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Come As You Are / Directions Section -->
+    <section class="directions-section relative overflow-hidden py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-content z-10 relative">
+                    <h2 class="quote-text text-5xl sm:text-6xl lg:text-7xl font-bold mb-4">
+                        "COME<br>AS YOU ARE"
+                    </h2>
+                    <p class="scripture-ref text-xl sm:text-2xl text-gray-400 mb-8">
+                        Matthew 11:28-30
+                    </p>
+                </div>
+
+                <!-- Right Content -->
+                <div class="welcome-content relative">
+                    <div class="welcome-card">
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            We know meeting someone for the first time can be intimidating, and going to a new church for the first time can be nerve-racking. We have an awesome greeting team that will greet and assist you as you walk into the door. We want to help make your first experience at Twainman a great one!
+                        </p>
+                        <button class="directions-btn">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            <span>Get directions</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Decorative Image -->
+                    <div class="welcome-image">
+                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800" 
+                             alt="Welcome" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Background Elements -->
+        <div class="bg-decoration bg-decoration-1"></div>
+        <div class="bg-decoration bg-decoration-2"></div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section class="py-20 px-4 bg-white" id="testimony">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">
+                    TESTIMONIES
+                </h2>
+                <p class="text-lg text-gray-600">
+                    These are Testaments to the Goodness of God
+                </p>
+            </div>
+
+            <!-- Testimonies Carousel -->
+            <div class="testimonies-carousel-wrapper relative">
+                <div class="testimonies-carousel">
+                    <!-- Testimony Card 1 -->
+                    <div class="testimony-card" data-index="0">
+                        <div class="testimony-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimony-text">
+                                "God has been so faithful to me and my family. Through the teachings at Twainman Ministry, 
+                                I've experienced a transformation in my spiritual walk. The community here has shown me 
+                                what true love and support looks like."
+                            </p>
+                            <div class="testimony-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200" 
+                                         alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sarah Johnson</h4>
+                                    <p class="author-role">Church Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimony Card 2 -->
+                    <div class="testimony-card" data-index="1">
+                        <div class="testimony-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimony-text">
+                                "I came to Twainman Ministry broken and lost, but God used this community to restore my 
+                                faith and give me hope. The Word preached here has changed my life completely. I'm forever 
+                                grateful for this spiritual family."
+                            </p>
+                            <div class="testimony-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200" 
+                                         alt="Michael Brown">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Michael Brown</h4>
+                                    <p class="author-role">Youth Leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimony Card 3 -->
+                    <div class="testimony-card" data-index="2">
+                        <div class="testimony-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimony-text">
+                                "The power of God manifested in my life through the prayers and support of this ministry. 
+                                I've witnessed miracles, healing, and breakthroughs that I never thought possible. 
+                                God is truly alive and moving here!"
+                            </p>
+                            <div class="testimony-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200" 
+                                         alt="Grace Williams">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Grace Williams</h4>
+                                    <p class="author-role">Worship Team</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimony Card 4 -->
+                    <div class="testimony-card" data-index="3">
+                        <div class="testimony-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimony-text">
+                                "Finding Twainman Ministry was a divine appointment. The biblical teachings have grounded 
+                                me in truth, and the fellowship has brought so much joy to my life. This is truly where 
+                                I belong."
+                            </p>
+                            <div class="testimony-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200" 
+                                         alt="David Martinez">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">David Martinez</h4>
+                                    <p class="author-role">Volunteer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimony Card 5 -->
+                    <div class="testimony-card" data-index="4">
+                        <div class="testimony-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimony-text">
+                                "My marriage was falling apart until we started attending Twainman Ministry. Through 
+                                counseling and prayer, God restored what was broken. Today, my family is stronger than 
+                                ever. All glory to God!"
+                            </p>
+                            <div class="testimony-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200" 
+                                         alt="Emily Davis">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Emily Davis</h4>
+                                    <p class="author-role">Family Ministry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="testimony-nav testimony-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimony-nav testimony-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Dots Indicators -->
+                <div class="testimony-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
+                    <button class="dot" data-slide="4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You / Support Banner -->
+    <section class="thankyou-banner relative overflow-hidden py-20 px-4">
+        <!-- Decorative Foliage -->
+        <div class="foliage-decoration foliage-top-left"></div>
+        <div class="foliage-decoration foliage-top-right"></div>
+        <div class="foliage-decoration foliage-bottom-left"></div>
+        <div class="foliage-decoration foliage-bottom-right"></div>
+        
+        <div class="max-w-4xl mx-auto relative z-10">
+            <!-- Large Thank You Text Background -->
+            <div class="thankyou-bg-text">THANK YOU</div>
+            
+            <!-- Content -->
+            <div class="support-content text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    TWAINMAN SUPPORT
+                </h2>
+                <p class="text-white text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+                    We believe that giving is an act of worship and a way to partner with God in transforming lives. 
+                    Your generosity helps us share the love of Christ, serve our community, and support ministries both 
+                    locally and globally.
+                </p>
+                <button class="give-button">
+                    <span>Click here to give</span>
+                    <i class="fas fa-heart ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">LOGO</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Proclaiming the Lordship of Jesus Christ
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Quicklinks</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="about.html" class="footer-link">About</a>
+                        </li>
+                        <li>
+                            <a href="events.html" class="footer-link">Events</a>
+                        </li>
+                        <li>
+                            <a href="giving.html" class="footer-link">Giving</a>
+                        </li>
+                        <li>
+                            <a href="giving.html" class="footer-link">Service Time</a>
+                        </li>
+                        <li>
+                            <a href="about.html#mission" class="footer-link">Our Mission</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Resources</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://t.me/twainmanaudio" class="footer-link">Audio sermons</a>
+                        </li>
+                        <li>
+                            <a href="index.html#testimony" class="footer-link">Testimonies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Prayer requests</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Days -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Service Days</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Sundays</span>
+                                <p class="text-sm text-gray-400">8:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Mondays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Tuesdays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500 mb-4 md:mb-0">
+                    © Twainman Ministry Intl'. All rights reserved
+                </p>
+                
+                <!-- Social Media Links -->
+                <div class="flex space-x-6">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

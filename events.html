@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Twainman Ministry Intl'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="text-gray-800 text-xl font-bold">LOGO</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="sermons.html" class="nav-link">Sermons</a>
+                    <a href="services.html" class="nav-link">Service Time</a>
+                    <a href="events.html" class="nav-link active">Events</a>
+                    <a href="giving.html" class="nav-link">Giving</a>
+                </div>
+                
+                <!-- Social Icons & Contact Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <button class="contact-btn">
+                        Contact
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="index.html" class="block nav-link-mobile">Home</a>
+                <a href="about.html" class="block nav-link-mobile">About Us</a>
+                <a href="sermons.html" class="block nav-link-mobile">Sermons</a>
+                <a href="services.html" class="block nav-link-mobile">Service Time</a>
+                <a href="events.html" class="block nav-link-mobile active">Events</a>
+                <a href="giving.html" class="block nav-link-mobile">Giving</a>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+                <button class="contact-btn w-full mt-4">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Hero Section -->
+    <section class="events-hero">
+        <div class="events-hero-image">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070" 
+                 alt="Events">
+            <div class="events-hero-overlay"></div>
+        </div>
+        <div class="events-hero-content">
+            <h1 class="events-hero-title">WELCOME</h1>
+            <p class="events-hero-subtitle">VIEW ALL OUR EVENTS</p>
+            <a href="#all-events" class="hero-scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Events Filter Section -->
+    <section class="events-filter-section" id="all-events">
+        <div class="container">
+            <div class="filter-header">
+                <h2 class="filter-title">All events</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="service">Services</button>
+                    <button class="filter-btn" data-filter="study">Bible Study</button>
+                    <button class="filter-btn" data-filter="special">Special Events</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid Section -->
+    <section class="events-grid-section">
+        <div class="container">
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card" data-category="service">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=800" 
+                             alt="Sunday Service">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">SUNDAY SERVICE</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card" data-category="study">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800" 
+                             alt="Bible Study">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">BIBLE STUDY</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="event-card" data-category="study">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=800" 
+                             alt="Bible Study">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">BIBLE STUDY</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 -->
+                <div class="event-card" data-category="service">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=800" 
+                             alt="Sunday Service">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">SUNDAY SERVICE</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="event-card" data-category="study">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800" 
+                             alt="Bible Study">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">BIBLE STUDY</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 6 -->
+                <div class="event-card" data-category="study">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=800" 
+                             alt="Bible Study">
+                        <div class="event-badge">Weekly</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">BIBLE STUDY</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 2025 - June 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 7 - Special Event -->
+                <div class="event-card" data-category="special">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800" 
+                             alt="Special Event">
+                        <div class="event-badge special">Special</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">EASTER CELEBRATION</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>April 20, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 8 - Special Event -->
+                <div class="event-card" data-category="special">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800" 
+                             alt="Youth Conference">
+                        <div class="event-badge special">Special</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">YOUTH CONFERENCE</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>May 15-17, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 9 - Special Event -->
+                <div class="event-card" data-category="special">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800" 
+                             alt="Prayer Summit">
+                        <div class="event-badge special">Special</div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">PRAYER SUMMIT</h3>
+                        <div class="event-date">
+                            <i class="far fa-calendar"></i>
+                            <span>June 1, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="footer-logo">LOGO</h3>
+                    <p class="footer-tagline">
+                        Proclaiming the Lordship of Jesus Christ
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quicklinks</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="events.html" class="footer-link">Events</a></li>
+                        <li><a href="giving.html" class="footer-link">Giving</a></li>
+                        <li><a href="about.html#mission" class="footer-link">Our Mission</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/twainmanaudio" class="footer-link">Audio sermons</a></li>
+                        <li><a href="index.html#testimony" class="footer-link">Testimonies</a></li>
+                        <li><a href="#" class="footer-link">Prayer requests</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Days -->
+               <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Service Days</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Sundays</span>
+                                <p class="text-sm text-gray-400">8:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Mondays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Tuesdays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Twainman Ministry Intl'. All rights reserved
+                </p>
+                
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

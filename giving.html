@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giving - Twainman Ministry Intl'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="giving.css">
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="text-gray-800 text-xl font-bold">LOGO</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="sermons.html" class="nav-link">Sermons</a>
+                    <a href="services.html" class="nav-link">Service Time</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="giving.html" class="nav-link active">Giving</a>
+                </div>
+                
+                <!-- Social Icons & Contact Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <button class="contact-btn">
+                        Contact
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="index.html" class="block nav-link-mobile">Home</a>
+                <a href="about.html" class="block nav-link-mobile">About Us</a>
+                <a href="sermons.html" class="block nav-link-mobile">Sermons</a>
+                <a href="services.html" class="block nav-link-mobile">Service Time</a>
+                <a href="events.html" class="block nav-link-mobile">Events</a>
+                <a href="giving.html" class="block nav-link-mobile active">Giving</a>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+                <button class="contact-btn w-full mt-4">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Giving Hero Section -->
+    <section class="giving-hero">
+        <div class="giving-hero-image">
+            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070" 
+                 alt="Giving">
+            <div class="giving-hero-overlay"></div>
+        </div>
+        <div class="giving-hero-content">
+            <h1 class="giving-hero-title">
+                A GIFT GIVEN IN LOVE HAS THE POWER TO WIPE OUT ANY FORM OF STORM
+            </h1>
+        </div>
+    </section>
+
+    <!-- Why Give Section -->
+    <section class="why-give-section">
+        <div class="container">
+            <div class="why-give-content">
+                <p class="why-give-text">
+                    Your generous contribution enables us to spread the gospel, support our community, and 
+                    transform lives through the power of God's love. Every gift, no matter the size, makes a 
+                    significant impact in advancing the kingdom of God and blessing those in need. When you 
+                    give to Twainman Ministry, you're not just making a donation—you're partnering with us 
+                    in fulfilling the Great Commission.
+                </p>
+                <p class="why-give-text">
+                    We believe that giving is an act of worship and obedience to God. Your faithful support 
+                    allows us to reach the lost, disciple believers, provide for the needy, and demonstrate 
+                    Christ's love in practical ways. Through your partnership, we can continue to impact lives 
+                    both locally and globally, bringing hope, healing, and restoration to communities that 
+                    desperately need the light of the gospel.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You & Account Details Section -->
+    <section class="thankyou-account-section">
+        <div class="container">
+            <div class="thankyou-wrapper">
+                <!-- Thank You Image -->
+                <div class="thankyou-image">
+                    <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=800" 
+                         alt="Thank You">
+                </div>
+                
+                <!-- Account Details Card -->
+                <div class="account-details-card">
+                    <div class="card-header">
+                        <i class="fas fa-university"></i>
+                        <h3>Account Details</h3>
+                    </div>
+                    
+                    <div class="account-info">
+                        <div class="account-item">
+                            <div class="account-label">
+                                <i class="fas fa-hashtag"></i>
+                                <span>Account Number</span>
+                            </div>
+                            <div class="account-value">
+                                <span class="account-number">1017522309</span>
+                                <button class="copy-btn" data-copy="1017522309">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="account-item">
+                            <div class="account-label">
+                                <i class="fas fa-building"></i>
+                                <span>Bank Name</span>
+                            </div>
+                            <div class="account-value">
+                                <span>Zenith Bank</span>
+                            </div>
+                        </div>
+
+                        <div class="account-item">
+                            <div class="account-label">
+                                <i class="fas fa-user"></i>
+                                <span>Account Name</span>
+                            </div>
+                            <div class="account-value">
+                                <span>Twainman Ministry Intl</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="footer-note">
+                            <i class="fas fa-heart"></i>
+                            Thank you for your generous support. God bless you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Ways to Give Section -->
+    <section class="ways-to-give-section">
+        <div class="container">
+            <h2 class="section-title">Other Ways to Give</h2>
+            
+            <div class="ways-grid">
+ 
+
+                <!-- Mobile Transfer -->
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="way-title">Mobile Transfer</h3>
+                    <p class="way-description">
+                        Transfer directly from your mobile banking app using our account details.
+                    </p>
+                    <button class="way-btn">View Details</button>
+                </div>
+
+                <!-- In-Person -->
+                <div class="way-card">
+                    <div class="way-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3 class="way-title">In-Person</h3>
+                    <p class="way-description">
+                        Give during our worship services or visit our office during business hours.
+                    </p>
+                    <button class="way-btn">Get Directions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="footer-logo">LOGO</h3>
+                    <p class="footer-tagline">
+                        Proclaiming the Lordship of Jesus Christ
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quicklinks</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="events.html" class="footer-link">Events</a></li>
+                        <li><a href="giving.html" class="footer-link">Giving</a></li>
+                        <li><a href="about.html#mission" class="footer-link">Our Mission</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/twainmanaudio" class="footer-link">Audio sermons</a></li>
+                        <li><a href="index.html#testimony" class="footer-link">Testimonies</a></li>
+                        <li><a href="#" class="footer-link">Prayer requests</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Days -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Service Days</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Sundays</span>
+                                <p class="text-sm text-gray-400">8:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Mondays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Tuesdays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Twainman Ministry Intl'. All rights reserved
+                </p>
+                
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="giving-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Twainman Ministry Intl'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="text-gray-800 text-xl font-bold">LOGO</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="sermons.html" class="nav-link">Sermons</a>
+                    <a href="services.html" class="nav-link">Service Time</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="giving.html" class="nav-link">Giving</a>
+                </div>
+                
+                <!-- Social Icons & Contact Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <button class="contact-btn">
+                        Contact
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="index.html" class="block nav-link-mobile">Home</a>
+                <a href="about.html" class="block nav-link-mobile active">About Us</a>
+                <a href="sermons.html" class="block nav-link-mobile">Sermons</a>
+                <a href="services.html" class="block nav-link-mobile">Service Time</a>
+                <a href="events.html" class="block nav-link-mobile">Events</a>
+                <a href="giving.html" class="block nav-link-mobile">Giving</a>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+                <button class="contact-btn w-full mt-4">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-image">
+            <img src="/images/about.jpg" 
+                 alt="About Us">
+            <div class="about-hero-overlay"></div>
+        </div>
+        <div class="about-hero-content">
+            <p class="about-label">About Us</p>
+            <h1 class="about-hero-title">
+                PREPARING THE WAY FOR THE COMING OF THE LORD
+            </h1>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are-section">
+        <div class="container">
+            <h2 class="section-title">WHO WE ARE</h2>
+            
+            <div class="who-grid">
+                <!-- Left Content -->
+                <div class="who-content">
+                    <p class="who-text">
+                       We are so blessed to have you visit us at Twainman Ministry Intl. 
+
+TMI is a prayer and discipleship ministry. We exist to proclaim the Lordship of Jesus to the nations, and fulfill their ordination and ministry. At TMI we have a goal to bring men into their sonship inheritance.
+
+We are  non- denominational and we embrace everyone regardless of age, race, color or tribe.
+
+We believe in miracles. We are non-denominational and we embrace everyone regardless of age, race or any other characteristic.
+
+
+                    </p>
+                    <p class="who-text">
+                      You do not need to be perfect to fellowship with us at TMI, just be willing to learn and grow. We are committed to ensuring you grow in knowledge by the Word and lead a life of prayer.
+
+At TMI we are a strong family system giving all who come a sense of belonging, we love, we care, we support and we build up. 
+
+We look forward to having you in fellowship with us.
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="who-image">
+                    <img src="/images/who.jpg" 
+                         alt="Our Community">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="our-mission-section" id="mission">
+        <div class="container">
+            <h2 class="section-title">OUR MISSION</h2>
+            
+            <div class="mission-cards">
+                <!-- Mission Card 1 -->
+                <div class="mission-card">
+                    <div class="mission-image">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=400" 
+                             alt="Mission 1">
+                    </div>
+                    <div class="mission-text">
+                        <p>
+                            To proclaim the gospel of Jesus Christ and make disciples of all nations, teaching them 
+                            to observe all that He has commanded us with love and compassion.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission Card 2 -->
+                <div class="mission-card">
+                    <div class="mission-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400" 
+                             alt="Mission 2">
+                    </div>
+                    <div class="mission-text">
+                        <p>
+                            To restore the fullness of God's kingdom on earth through prayer, worship, and 
+                            demonstrating the power of the Holy Spirit in every aspect of life.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mission Card 3 -->
+                <div class="mission-card">
+                    <div class="mission-image">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=400" 
+                             alt="Mission 3">
+                    </div>
+                    <div class="mission-text">
+                        <p>
+                            To serve our community with excellence, reaching the lost, healing the broken, and 
+                            empowering believers to walk in their God-given purpose and calling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Lead Pastor Section -->
+    <section class="lead-pastor-section">
+        <div class="container">
+            <div class="pastor-grid">
+                <!-- Left Content -->
+                <div class="pastor-content">
+                    <h2 class="pastor-title">OUR LEAD PASTOR</h2>
+                    <p class="pastor-text">
+                       Pastor Patrick Evbomoen is the lead Pastor and visionary of Twainman Ministry International. He is called and sent of God with heaven’s mandate to preach reconciliation, restoration and redemption.
+
+
+
+                    </p>
+                    <p class="pastor-text">
+                       Pastor Patrick has been in ministry for well over 20years, an apt teacher of the word of God with a great passion for prayers, discipleship and to see men come into the fullness of the stature of Christ. He is a pioneer of several interdenominational impactful meetings. Many who have stayed under his ministrations received healings and astounding miracles by the mighty hand of God. He is a writer, author and has a great love for music. He has a penchant for excellence, diligence and humility which has endeared him to certain patriarchs of the gospel and seasoned men of God. He has and is still enjoying tremendous grace from these relationships.
+                    </p>
+                    <p class="pastor-text">
+                       
+Pastor Patrick is prosperously and joyfully married to Mrs Happy Evbomoen who co-pastors the ministry with him. They are blessed with four biological children Great, Joel, Jason and Bethel serving alongside with them in the ministry.
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="pastor-image">
+                    <img src="/images/pst.jpg" 
+                         alt="Lead Pastor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Ministries Section -->
+    <section class="our-ministries-section">
+        <div class="container">
+            <h2 class="section-title">OUR MINISTRIES</h2>
+            
+            <div class="ministries-grid">
+                <!-- Ministry Card 1 -->
+                <div class="ministry-card">
+                    <div class="ministry-image">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800" 
+                             alt="Men Ministry">
+                        <div class="ministry-overlay">
+                            <i class="fas fa-users ministry-icon"></i>
+                        </div>
+                    </div>
+                    <h3 class="ministry-label">MEN</h3>
+                </div>
+
+                <!-- Ministry Card 2 -->
+                <div class="ministry-card">
+                    <div class="ministry-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" 
+                             alt="Women Ministry">
+                        <div class="ministry-overlay">
+                            <i class="fas fa-female ministry-icon"></i>
+                        </div>
+                    </div>
+                    <h3 class="ministry-label">WOMEN</h3>
+                </div>
+
+                <!-- Ministry Card 3 -->
+                <div class="ministry-card">
+                    <div class="ministry-image">
+                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800" 
+                             alt="Youths Ministry">
+                        <div class="ministry-overlay">
+                            <i class="fas fa-running ministry-icon"></i>
+                        </div>
+                    </div>
+                    <h3 class="ministry-label">YOUTHS</h3>
+                </div>
+
+                <!-- Ministry Card 4 -->
+                <div class="ministry-card">
+                    <div class="ministry-image">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=800" 
+                             alt="Children Ministry">
+                        <div class="ministry-overlay">
+                            <i class="fas fa-child ministry-icon"></i>
+                        </div>
+                    </div>
+                    <h3 class="ministry-label">CHILDREN</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="contact-section">
+        <div class="contact-background">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070" 
+                 alt="Contact Us">
+            <div class="contact-overlay"></div>
+        </div>
+        
+        <div class="contact-content">
+            <h2 class="contact-title">GET IN TOUCH</h2>
+            <p class="contact-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="footer-logo">LOGO</h3>
+                    <p class="footer-tagline">
+                        Proclaiming the Lordship of Jesus Christ
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quicklinks</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="events.html" class="footer-link">Events</a></li>
+                        <li><a href="giving.html" class="footer-link">Giving</a></li>
+                        <li><a href="about.html#mission" class="footer-link">Our Mission</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/twainmanaudio" class="footer-link">Audio sermons</a></li>
+                        <li><a href="index.html#testimony" class="footer-link">Testimonies</a></li>
+                        <li><a href="#" class="footer-link">Prayer requests</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Days -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Service Days</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Sundays</span>
+                                <p class="text-sm text-gray-400">8:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Mondays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Tuesdays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Twainman Ministry Intl'. All rights reserved
+                </p>
+                
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+/* Color Variables */
+:root {
+    --primary-color: #7A3C85;
+    --primary-light: #9B5BA3;
+    --primary-dark: #5D2D66;
+    --primary-gradient: linear-gradient(135deg, #7A3C85, #9B5BA3);
+}
+
+/* Service Schedule Section */
+.service-schedule-section {
+    background: linear-gradient(to bottom, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.schedule-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 2px solid transparent;
+}
+
+.schedule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(122, 60, 133, 0.2);
+    border-color: var(--primary-light);
+}
+
+.schedule-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--primary-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(122, 60, 133, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.schedule-card:hover .schedule-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.schedule-time {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #92400e;
+    margin-top: 10px;
+}
+
+.special-service-item {
+    padding: 20px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.special-service-item:hover {
+    background: #f9fafb;
+}
+
+/* Schools Feature Cards */
+.school-feature-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.school-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(122, 60, 133, 0.25);
+}
+
+.school-image-wrapper {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.school-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.school-feature-card:hover .school-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.school-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(122, 60, 133, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.school-feature-card:hover .school-overlay {
+    opacity: 1;
+}
+
+.school-content {
+    padding: 30px;
+}
+
+.school-details {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Fellowship Cards */
+.fellowship-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    border-top: 4px solid var(--primary-color);
+}
+
+.fellowship-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(122, 60, 133, 0.2);
+}
+
+.fellowship-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.fellowship-card:hover .fellowship-icon {
+    background: var(--primary-gradient);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Service Units Section */
+.service-units-section {
+    background: var(--primary-gradient);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-units-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.service-unit-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+.service-unit-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.service-unit-card i {
+    transition: transform 0.3s ease;
+}
+
+.service-unit-card:hover i {
+    transform: scale(1.2);
+}
+
+.join-service-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 40px;
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.join-service-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #fef3c7;
+}
+
+/* FAQ Section */
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 25px rgba(122, 60, 133, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #f9fafb;
+}
+
+.faq-question i {
+    font-size: 20px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--primary-gradient);
+    position: relative;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/join.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button.primary {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #fef3c7;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+}
+
+.footer-link {
+    color: #9ca3af;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-light);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-light);
+    transform: translateX(5px);
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(122, 60, 133, 0.1);
+    border: 2px solid rgba(122, 60, 133, 0.3);
+    border-radius: 50%;
+    color: var(--primary-light);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(122, 60, 133, 0.3);
+}
+
+.text-purple-500 {
+    color: var(--primary-color) !important;
+}
+
+.text-purple-600 {
+    color: var(--primary-dark) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .schedule-card {
+        padding: 30px 20px;
+    }
+
+    .schedule-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .school-image-wrapper {
+        height: 250px;
+    }
+
+    .school-content {
+        padding: 25px 20px;
+    }
+
+    .fellowship-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .service-unit-card {
+        padding: 20px 15px;
+    }
+
+    .service-unit-card i {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-question span {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule-time {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .join-service-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}

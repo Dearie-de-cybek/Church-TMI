@@ -9,7 +9,7 @@
 /* Book page effect */
 .book-section {
     position: relative;
-    background: linear-gradient(to bottom, #8b7fb8 0%, #6b5b95 50%, #8b7fb8 100%);
+    background: linear-gradient(to bottom, var(--primary-light) 0%, var(--primary-color) 50%, var(--primary-light) 100%);
 }
 
 .book-page {

@@ -293,28 +293,6 @@ if (giveButton) {
     });
 }
 
-// Smooth scroll to top
-const scrollToTopBtn = document.createElement('button');
-scrollToTopBtn.classList.add('scroll-to-top');
-scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
-document.body.appendChild(scrollToTopBtn);
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        scrollToTopBtn.classList.add('show');
-    } else {
-        scrollToTopBtn.classList.remove('show');
-    }
-});
-
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
 // ============================================
 // CONTACT FORM - SEND TO WHATSAPP
 // ============================================

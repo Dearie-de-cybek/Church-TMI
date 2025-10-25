@@ -785,6 +785,108 @@
         </div>
     </footer>
 
+    <!-- Modal Overlay -->
+<div id="herald-modal" class="herald-modal">
+    <div class="herald-modal-content">
+        <button class="herald-modal-close" id="close-herald-modal">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="herald-modal-header">
+            <div class="herald-modal-icon">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <h2 class="herald-modal-title">NEW PROGRAM ALERT!</h2>
+            <div class="herald-modal-badge">DISCIPLESHIP SCHOOL</div>
+        </div>
+        
+        <div class="herald-modal-body">
+            <h3 class="herald-modal-program-name">KINGDOM HERALDS</h3>
+            <p class="herald-modal-tagline">Raising Voices for the King and His Kingdom</p>
+            
+            <div class="herald-modal-details">
+                <div class="herald-modal-detail-item">
+                    <i class="far fa-calendar"></i>
+                    <span>12 Weeks (3 Months)</span>
+                </div>
+                <div class="herald-modal-detail-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Theoretical, Practical & Spiritual</span>
+                </div>
+                <div class="herald-modal-detail-item">
+                    <i class="fas fa-award"></i>
+                    <span>Certification upon Completion</span>
+                </div>
+            </div>
+            
+            <p class="herald-modal-description">
+                A comprehensive discipleship program designed to equip and empower heralds 
+                who will proclaim the message of God's Kingdom with boldness, purity, and authority.
+            </p>
+            
+            <div class="herald-modal-actions">
+                <a href="kingdom.html" class="herald-modal-btn-primary">
+                    <span>Learn More</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="herald-modal-btn-secondary" id="dismiss-herald-modal">
+                    Maybe Later
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script src="script.js"></script>
+    <script>
+// Herald Modal Script
+(function() {
+    const modal = document.getElementById('herald-modal');
+    const closeBtn = document.getElementById('close-herald-modal');
+    const dismissBtn = document.getElementById('dismiss-herald-modal');
+    
+    // Check if user has dismissed the modal before
+    const hasSeenModal = localStorage.getItem('heraldModalSeen');
+    
+    // Show modal after 3 seconds if not seen before
+    if (!hasSeenModal) {
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 3000);
+    }
+    
+    // Close modal function
+    function closeModal() {
+        modal.classList.remove('active');
+        // Remember that user has seen the modal
+        localStorage.setItem('heraldModalSeen', 'true');
+    }
+    
+    // Close button click
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    // Dismiss button click
+    if (dismissBtn) {
+        dismissBtn.addEventListener('click', closeModal);
+    }
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+})();
+</script>
+
 </body>
 </html>

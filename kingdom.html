@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Heralds - Twainman Ministry Intl'</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="kingdom-heralds.css">
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <div class="text-gray-800 text-xl font-bold">LOGO</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="sermons.html" class="nav-link">Sermons</a>
+                    <a href="services.html" class="nav-link">Service Time</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="giving.html" class="nav-link">Giving</a>
+                </div>
+                
+                <!-- Social Icons & Enroll Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#enroll"><button class="enroll-btn">
+                        ENROLL NOW
+                    </button></a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="index.html" class="block nav-link-mobile">Home</a>
+                <a href="about.html" class="block nav-link-mobile">About Us</a>
+                <a href="sermons.html" class="block nav-link-mobile">Sermons</a>
+                <a href="services.html" class="block nav-link-mobile">Service Time</a>
+                <a href="events.html" class="block nav-link-mobile">Events</a>
+                <a href="giving.html" class="block nav-link-mobile">Giving</a>
+                <div class="flex space-x-4 pt-4">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+                <a href="#enroll"><button class="enroll-btn w-full mt-4">
+                    ENROLL NOW
+                </button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="herald-hero">
+        <div class="herald-hero-background">
+            <img src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=2070" 
+                 alt="Kingdom Heralds">
+            <div class="herald-hero-overlay"></div>
+        </div>
+        <div class="herald-hero-content">
+            <div class="herald-badge">DISCIPLESHIP PROGRAM</div>
+            <h1 class="herald-title">
+                KINGDOM HERALDS
+            </h1>
+            <p class="herald-subtitle">
+                Raising Voices for the King and His Kingdom
+            </p>
+            <div class="herald-details">
+                <div class="detail-item">
+                    <i class="far fa-calendar"></i>
+                    <span>12 Weeks</span>
+                </div>
+                <div class="detail-item">
+                    <i class="far fa-clock"></i>
+                    <span>3 Months</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <span>Group Learning</span>
+                </div>
+            </div>
+            <a href="#about-program" class="hero-scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Affirmation Section -->
+    <section class="affirmation-section" id="about-program">
+        <div class="container">
+            <div class="affirmation-card">
+                <div class="affirmation-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h2 class="affirmation-title">Prophetic Affirmation for Kingdom Heralds</h2>
+                <div class="affirmation-content">
+                    <p class="affirmation-text">
+                        "I am a voice ordained in eternity, awakened for such a time as this and generations to come. The Spirit of the Lord is upon me, for He has anointed me to herald the message of the King. I do not go in my own strength, but in the fire of His presence.
+                    </p>
+                    <p class="affirmation-text">
+                        My tongue is like a ready pen, inscribing truth upon hearts. I decree what heaven declares. I proclaim liberty to captives, light to those in darkness, and the nearness of the Kingdom. I am sent—not by man, but by the Lord of Hosts. I walk in divine alignment, clothed in righteousness, armed with truth, and crowned with purpose.
+                    </p>
+                    <p class="affirmation-text emphasis">
+                        The sound of awakening is in my mouth. I will not be silent. I am a herald of the King."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fellowship Declaration Section -->
+    <section class="fellowship-section">
+        <div class="fellowship-background"></div>
+        <div class="container">
+            <div class="fellowship-content">
+                <h2 class="fellowship-title">I AM A DISCIPLE OF CHRIST</h2>
+                <p class="fellowship-author">— Unknown Missionary (The Fellowship of the Unashamed)</p>
+                
+                <div class="declaration-grid">
+                    <div class="declaration-block">
+                        <p>I am part of the fellowship of the unashamed. I have Holy Spirit power. The die has been cast. I have stepped over the line. The decision has been made—I'm a disciple of His.</p>
+                    </div>
+                    
+                    <div class="declaration-block">
+                        <p>I won't look back, let up, slow down, back away, or be still. My past is redeemed, my present makes sense, my future is secure. I'm finished and done with low living, sight walking, small planning, smooth knees, colorless dreams, tamed visions, worldly talking, cheap giving, and dwarfed goals.</p>
+                    </div>
+                    
+                    <div class="declaration-block">
+                        <p>I no longer need preeminence, prosperity, position, promotions, plaudits, or popularity. I don't have to be right, first, tops, recognized, praised, regarded, or rewarded. I now live by faith, lean on His presence, walk by patience, am uplifted by prayer, and labor with power.</p>
+                    </div>
+                    
+                    <div class="declaration-block">
+                        <p>My face is set, my gait is fast, my goal is heaven, my road is narrow, my way rough, my companions few, my Guide reliable, my mission clear.</p>
+                    </div>
+                    
+                    <div class="declaration-block">
+                        <p>I cannot be bought, compromised, detoured, lured away, turned back, deluded, or delayed. I will not flinch in the face of sacrifice, hesitate in the presence of adversity, negotiate at the table of the enemy, ponder at the pool of popularity, or meander in the maze of mediocrity.</p>
+                    </div>
+                    
+                    <div class="declaration-block">
+                        <p>I won't give up, shut up, let up, until I've stayed up, stored up, prayed up, paid up, preached up for the cause of Christ.</p>
+                    </div>
+                    
+                    <div class="declaration-block highlight">
+                        <p>I am a disciple of Jesus. I must go until He comes, give until I drop, preach until all know, and work until He stops me.</p>
+                        <p>And when He comes for His own, He'll have no problem recognizing me—My banner will be clear!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <h2 class="section-title-center">Program Vision</h2>
+            <div class="vision-card">
+                <div class="vision-icon-large">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <p class="vision-text">
+                    To raise heralds who understand, embody, and proclaim the message of God's Kingdom with boldness, purity, and authority in every sphere of engagement.
+                </p>
+            </div>
+            
+            <div class="format-grid">
+                <div class="format-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Theoretical</h3>
+                    <p>Deep theological foundations and Kingdom principles</p>
+                </div>
+                <div class="format-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Practical</h3>
+                    <p>Hands-on ministry experience and activation</p>
+                </div>
+                <div class="format-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Spiritual Formation</h3>
+                    <p>Character development and Christ-likeness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section class="objectives-section">
+        <div class="container">
+            <h2 class="section-title-center">Session Objectives</h2>
+            <p class="objectives-intro">Each weekly session is designed to help participants:</p>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-number">1</div>
+                    <p>Gain foundational understanding of the Kingdom of God</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">2</div>
+                    <p>Develop strong spiritual disciplines and Christ-like character</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">3</div>
+                    <p>Cultivate sensitivity to the Holy Spirit and prophetic insight</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">4</div>
+                    <p>Learn practical ministry and leadership skills</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">5</div>
+                    <p>Experience activation through hands-on ministry</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-number">6</div>
+                    <p>Discover and articulate their personal Kingdom mandate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title-center">12-Week Training Curriculum</h2>
+            
+            <!-- Month 1 -->
+            <div class="month-block">
+                <div class="month-header">
+                    <h3 class="month-title">MONTH 1</h3>
+                    <p class="month-subtitle">Foundation & Identity</p>
+                </div>
+                
+                <div class="weeks-grid">
+                    <div class="week-card">
+                        <div class="week-number">Week 1</div>
+                        <h4 class="week-title">Kingdom Perspectives</h4>
+                        <ul class="week-topics">
+                            <li>Overview of the Kingdom of God</li>
+                            <li>The King, His Kingdom & Covenant</li>
+                            <li>Biblical Authority and Sound Doctrine</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 2</div>
+                        <h4 class="week-title">Spiritual Formation & Discipleship</h4>
+                        <ul class="week-topics">
+                            <li>Identity in Christ & Sonship</li>
+                            <li>Intimacy with God</li>
+                            <li>Spiritual Disciplines & Devotion</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 3</div>
+                        <h4 class="week-title">Prayer & Intercession</h4>
+                        <ul class="week-topics">
+                            <li>Foundations of Effective Prayer</li>
+                            <li>Intercession & Watchman Ministry</li>
+                            <li>Fasting & Spiritual Sensitivity</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 4</div>
+                        <h4 class="week-title">Worship & Creative Expression</h4>
+                        <ul class="week-topics">
+                            <li>Redefining Worship</li>
+                            <li>Prophetic Worship & Atmosphere Shifting</li>
+                            <li>Using Music, Drama & Arts in Heralding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 2 -->
+            <div class="month-block">
+                <div class="month-header">
+                    <h3 class="month-title">MONTH 2</h3>
+                    <p class="month-subtitle">Equipping & Empowering</p>
+                </div>
+                
+                <div class="weeks-grid">
+                    <div class="week-card">
+                        <div class="week-number">Week 5</div>
+                        <h4 class="week-title">Prophetic Ministry</h4>
+                        <ul class="week-topics">
+                            <li>The Prophetic Call of a Herald</li>
+                            <li>Hearing and Interpreting God's Voice</li>
+                            <li>Operating in the Gifts of the Spirit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 6</div>
+                        <h4 class="week-title">Evangelism & Missions</h4>
+                        <ul class="week-topics">
+                            <li>Kingdom Evangelism Models</li>
+                            <li>Power Evangelism & Testimony</li>
+                            <li>Cross-cultural Witnessing & Global Perspective</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 7</div>
+                        <h4 class="week-title">Apostolic Leadership & Governance</h4>
+                        <ul class="week-topics">
+                            <li>Fivefold Ministry and the Role of Heralds</li>
+                            <li>Leadership Ethics & Kingdom Authority</li>
+                            <li>Building Apostolic Teams & Structures</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 8</div>
+                        <h4 class="week-title">Culture & Reformation</h4>
+                        <ul class="week-topics">
+                            <li>Influencing the 7 Mountains of Culture</li>
+                            <li>Marketplace Ministry</li>
+                            <li>Media & Kingdom Messaging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 3 -->
+            <div class="month-block">
+                <div class="month-header">
+                    <h3 class="month-title">MONTH 3</h3>
+                    <p class="month-subtitle">Activation & Commissioning</p>
+                </div>
+                
+                <div class="weeks-grid">
+                    <div class="week-card">
+                        <div class="week-number">Week 9</div>
+                        <h4 class="week-title">Practicum – Ministry Simulation</h4>
+                        <ul class="week-topics">
+                            <li>Street Evangelism</li>
+                            <li>Prophetic & Intercessory Sessions</li>
+                            <li>Worship Nights & Preaching Labs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 10</div>
+                        <h4 class="week-title">Mentoring & Accountability</h4>
+                        <ul class="week-topics">
+                            <li>Small Groups & Discipleship</li>
+                            <li>Conflict Resolution & Humility in Ministry</li>
+                            <li>Building Healthy Relationships in Ministry</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card">
+                        <div class="week-number">Week 11</div>
+                        <h4 class="week-title">Strategy & Vision Casting</h4>
+                        <ul class="week-topics">
+                            <li>Crafting Personal Mandate as a Herald</li>
+                            <li>Building Ministry Vision Boards</li>
+                            <li>Navigating Opposition & Resistance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="week-card special">
+                        <div class="week-number">Week 12</div>
+                        <h4 class="week-title">Commissioning & Graduation</h4>
+                        <ul class="week-topics">
+                            <li>Final Assessment & Presentations</li>
+                            <li>Prophetic Impartation & Anointing Service</li>
+                            <li>Commissioning as Kingdom Heralds</li>
+                        </ul>
+                        <div class="graduation-badge">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Section -->
+    <section class="assessment-section">
+        <div class="container">
+            <h2 class="section-title-center">Assessment Methods</h2>
+            <p class="assessment-intro">Participants will be assessed through:</p>
+            
+            <div class="assessment-grid">
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Weekly Reflection Journals</h3>
+                    <p>Personal takeaways and insights</p>
+                </div>
+                
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Projects</h3>
+                    <p>Evangelism, worship, and prophetic activation</p>
+                </div>
+                
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3>Ministry Simulations</h3>
+                    <p>Role-playing and real-time ministry tasks</p>
+                </div>
+                
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Peer Reviews</h3>
+                    <p>Constructive feedback within small accountability groups</p>
+                </div>
+                
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <h3>Final Presentation</h3>
+                    <p>Articulation of personal mandate and vision</p>
+                </div>
+                
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Faculty Evaluation</h3>
+                    <p>Based on participation, growth, and engagement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Section -->
+    <section class="enrollment-section" id="enroll">
+        <div class="enrollment-background"></div>
+        <div class="container">
+            <div class="enrollment-content">
+                <div class="enrollment-icon-large">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h2 class="enrollment-title">BECOME A KINGDOM HERALD</h2>
+                <p class="enrollment-text">
+                    Are you ready to answer the call? Join us for 12 transformative weeks as we equip you to be a voice for the King and His Kingdom.
+                </p>
+                <div class="enrollment-details-box">
+                    <div class="enrollment-detail">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Duration: 12 Weeks (3 Months)</span>
+                    </div>
+                    <div class="enrollment-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location: Twainman Ministry Intl'</span>
+                    </div>
+                    <div class="enrollment-detail">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Format: Theoretical, Practical & Spiritual</span>
+                    </div>
+                </div>
+                <button class="enrollment-btn" id="enroll-btn">
+                    <span>REGISTER NOW</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="enrollment-note">Limited seats available. Enrollment opens soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Tagline -->
+                <div>
+                    <h3 class="footer-logo">LOGO</h3>
+                    <p class="footer-tagline">
+                        Proclaiming the Lordship of Jesus Christ
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quicklinks</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="events.html" class="footer-link">Events</a></li>
+                        <li><a href="giving.html" class="footer-link">Giving</a></li>
+                        <li><a href="about.html#mission" class="footer-link">Our Mission</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://t.me/twainmanaudio" class="footer-link">Audio sermons</a></li>
+                        <li><a href="index.html#testimony" class="footer-link">Testimonies</a></li>
+                        <li><a href="#" class="footer-link">Prayer requests</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Days -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase">Service Days</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Sundays</span>
+                                <p class="text-sm text-gray-400">8:00 AM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Mondays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-purple-500 mt-1 mr-3"></i>
+                            <div>
+                                <span class="font-semibold text-white">Tuesdays</span>
+                                <p class="text-sm text-gray-400">5:00 PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © Twainman Ministry Intl'. All rights reserved
+                </p>
+                
+                <!-- Social Media Links -->
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="kingdom-heralds.js"></script>
+</body>
+</html>
